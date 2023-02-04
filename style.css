@@ -1,0 +1,123 @@
+#myVideo {
+    
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: cover;
+}
+body{
+    background: fixed;
+    background: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Quintessential', cursive;
+    font-size: 80px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 153, 0, 0.726);
+}
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.aded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:  relative;
+    flex-direction: column;
+    background: #ffffff;
+    height: 60px;
+    width: 35%;
+    list-style-type: none;
+    font-size: 20px;
+    border-bottom: 1px solid #eeda9a;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-family: 'Quintessential', cursive;
+}
+.complited{
+    background: #fde5a3;
+    color: white;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 1s ease;
+}
+.inputField{
+    padding:10px;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+}
+.btn{
+    background-color: #eeda9a;
+    color: black;
+    border: none ;
+    border-radius: 15px;
+    font-family: 'Quintessential', cursive;
+}
+
+.list{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+    font: 20px;
+    margin-top: 30px;
+
+}
+.ullist{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+@media all and (max-width: 1300px){
+    #myVideo{
+        height: 100%;
+        background-color: #eeda9a;
+        
+    }
+}
+
+
+@media all and (max-width: 900px){
+    #myVideo{
+        display: none;
+    }
+    h1{
+        font-size: 60px;
+        text-shadow: 3px 3px 5p, #0f0f0f;
+    }
+    body{
+        background-image: url(lemon.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        background-position: center;
+        margin-right: 0;
+    }
+    .inputField{
+        width: 70%;
+    }
+    .aded{
+        width: 70%;
+    }
+}
+@media all and (max-width: 500px){
+    h1{
+        font-size: 40px;
+    }
+}
